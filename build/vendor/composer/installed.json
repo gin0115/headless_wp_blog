@@ -1,0 +1,211 @@
+[
+    {
+        "name": "level-2\/dice",
+        "version": "4.0.2",
+        "version_normalized": "4.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https:\/\/github.com\/Level-2\/Dice.git",
+            "reference": "b9336d9200d0165c31e982374dc5d8d2552807bc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https:\/\/api.github.com\/repos\/Level-2\/Dice\/zipball\/b9336d9200d0165c31e982374dc5d8d2552807bc",
+            "reference": "b9336d9200d0165c31e982374dc5d8d2552807bc",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.0.0"
+        },
+        "require-dev": {
+            "phpunit\/phpunit": "^6.5"
+        },
+        "time": "2020-01-28T13:47:49+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PC_Headless_Blog_1AA\\Dice\\": ".\/"
+            }
+        },
+        "notification-url": "https:\/\/packagist.org\/downloads\/",
+        "license": [
+            "BSD-2-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Tom Butler",
+                "email": "tom@r.je"
+            }
+        ],
+        "description": "A minimalist Dependency injection container (DIC) for PHP. Please note: 3.0+ is only compatible with PHP 7.0. The 2.0 branch is compatbile with PHP 5.6.",
+        "homepage": "http:\/\/r.je\/dice.html",
+        "keywords": [
+            "dependency injection",
+            "dependency injection container",
+            "di",
+            "ioc"
+        ]
+    },
+    {
+        "name": "pinkcrab\/hook-loader",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https:\/\/github.com\/Pink-Crab\/Loader.git",
+            "reference": "1d784242890a0b14a0b00e61b85ffc732d1bb4a0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https:\/\/api.github.com\/repos\/Pink-Crab\/Loader\/zipball\/1d784242890a0b14a0b00e61b85ffc732d1bb4a0",
+            "reference": "1d784242890a0b14a0b00e61b85ffc732d1bb4a0",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.1.0"
+        },
+        "require-dev": {
+            "dealerdirect\/phpcodesniffer-composer-installer": "*",
+            "object-calisthenics\/phpcs-calisthenics-rules": "*",
+            "php-stubs\/wordpress-stubs": "^5.6.0",
+            "phpstan\/phpstan": "^0.12.6",
+            "phpunit\/phpunit": "^7.0",
+            "pinkcrab\/phpunit-helpers": "dev-master",
+            "roots\/wordpress": "^5.5",
+            "symfony\/var-dumper": "4.*",
+            "szepeviktor\/phpstan-wordpress": "^0.7.2",
+            "wp-coding-standards\/wpcs": "*",
+            "wp-phpunit\/wp-phpunit": "^5.0",
+            "yoast\/phpunit-polyfills": "^0.2.0"
+        },
+        "time": "2021-03-09T09:28:08+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PC_Headless_Blog_1AA\\PinkCrab\\Loader\\": "src"
+            },
+            "files": [
+                "tests\/Fixtures\/functions.php"
+            ]
+        },
+        "notification-url": "https:\/\/packagist.org\/downloads\/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Glynn Quelch",
+                "email": "glynn.quelch@pinkcrab.co.uk",
+                "homepage": "http:\/\/clappo.co.uk",
+                "role": "Developer"
+            }
+        ],
+        "description": "An object based hook loader for WordPress.",
+        "homepage": "https:\/\/pinkcrab.co.uk"
+    },
+    {
+        "name": "pinkcrab\/plugin-framework",
+        "version": "0.4.0",
+        "version_normalized": "0.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https:\/\/github.com\/Pink-Crab\/Plugin-Framework.git",
+            "reference": "6ec8c71caa74319a35dec816c1fe938f12d82878"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https:\/\/api.github.com\/repos\/Pink-Crab\/Plugin-Framework\/zipball\/6ec8c71caa74319a35dec816c1fe938f12d82878",
+            "reference": "6ec8c71caa74319a35dec816c1fe938f12d82878",
+            "shasum": ""
+        },
+        "require": {
+            "level-2\/dice": "^4.0.2",
+            "php": ">=7.1.0",
+            "pinkcrab\/hook-loader": "1.0.*",
+            "psr\/container": "^1.0"
+        },
+        "require-dev": {
+            "dealerdirect\/phpcodesniffer-composer-installer": "*",
+            "gin0115\/wpunit-helpers": "^1.0",
+            "object-calisthenics\/phpcs-calisthenics-rules": "*",
+            "php-stubs\/wordpress-stubs": "^5.6.0",
+            "phpstan\/phpstan": "^0.12.6",
+            "phpunit\/phpunit": "^7.0",
+            "roots\/wordpress": "^5.5",
+            "symfony\/var-dumper": "4.*",
+            "szepeviktor\/phpstan-wordpress": "^0.7.2",
+            "wp-coding-standards\/wpcs": "*",
+            "wp-phpunit\/wp-phpunit": "^5.0"
+        },
+        "time": "2021-03-30T01:10:53+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PC_Headless_Blog_1AA\\PinkCrab\\Core\\": "src"
+            }
+        },
+        "notification-url": "https:\/\/packagist.org\/downloads\/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Glynn Quelch",
+                "email": "glynn.quelch@pinkcrab.co.uk",
+                "homepage": "http:\/\/clappo.co.uk",
+                "role": "Developer"
+            }
+        ],
+        "description": "The core component of the PinkCrab plugin framework",
+        "homepage": "https:\/\/pinkcrab.co.uk"
+    },
+    {
+        "name": "psr\/container",
+        "version": "1.1.1",
+        "version_normalized": "1.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https:\/\/github.com\/php-fig\/container.git",
+            "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https:\/\/api.github.com\/repos\/php-fig\/container\/zipball\/8622567409010282b7aeebe4bb841fe98b58dcaf",
+            "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.2.0"
+        },
+        "time": "2021-03-05T17:36:06+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PC_Headless_Blog_1AA\\Psr\\Container\\": "src\/"
+            }
+        },
+        "notification-url": "https:\/\/packagist.org\/downloads\/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "https:\/\/www.php-fig.org\/"
+            }
+        ],
+        "description": "Common Container Interface (PHP FIG PSR-11)",
+        "homepage": "https:\/\/github.com\/php-fig\/container",
+        "keywords": [
+            "PSR-11",
+            "container",
+            "container-interface",
+            "container-interop",
+            "psr"
+        ]
+    }
+]

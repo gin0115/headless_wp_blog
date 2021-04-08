@@ -237,18 +237,24 @@ if (!class_exists('Baz', false) && !interface_exists('Baz', false) && !trait_exi
 if (!class_exists('Composer\Autoload\ClassLoader', false) && !interface_exists('Composer\Autoload\ClassLoader', false) && !trait_exists('Composer\Autoload\ClassLoader', false)) {
     spl_autoload_call('PC_Headless_Blog_1AA\Composer\Autoload\ClassLoader');
 }
-if (!class_exists('ComposerAutoloaderInit942b32999430cafae57d90e521d3ad97', false) && !interface_exists('ComposerAutoloaderInit942b32999430cafae57d90e521d3ad97', false) && !trait_exists('ComposerAutoloaderInit942b32999430cafae57d90e521d3ad97', false)) {
-    spl_autoload_call('PC_Headless_Blog_1AA\ComposerAutoloaderInit942b32999430cafae57d90e521d3ad97');
+if (!class_exists('ComposerAutoloaderInitfb80eb8e6c481fa9157dbd5f389dad5e', false) && !interface_exists('ComposerAutoloaderInitfb80eb8e6c481fa9157dbd5f389dad5e', false) && !trait_exists('ComposerAutoloaderInitfb80eb8e6c481fa9157dbd5f389dad5e', false)) {
+    spl_autoload_call('PC_Headless_Blog_1AA\ComposerAutoloaderInitfb80eb8e6c481fa9157dbd5f389dad5e');
 }
 if (!class_exists('Test_Test', false) && !interface_exists('Test_Test', false) && !trait_exists('Test_Test', false)) {
     spl_autoload_call('PC_Headless_Blog_1AA\Test_Test');
 }
+if (!class_exists('Test_HTTP_Helper', false) && !interface_exists('Test_HTTP_Helper', false) && !trait_exists('Test_HTTP_Helper', false)) {
+    spl_autoload_call('PC_Headless_Blog_1AA\Test_HTTP_Helper');
+}
+if (!class_exists('Test_HTTP', false) && !interface_exists('Test_HTTP', false) && !trait_exists('Test_HTTP', false)) {
+    spl_autoload_call('PC_Headless_Blog_1AA\Test_HTTP');
+}
 
 // Functions whitelisting. For more information see:
 // https://github.com/humbug/php-scoper/blob/master/README.md#functions-whitelisting
-if (!function_exists('composerRequire942b32999430cafae57d90e521d3ad97')) {
-    function composerRequire942b32999430cafae57d90e521d3ad97() {
-        return \PC_Headless_Blog_1AA\composerRequire942b32999430cafae57d90e521d3ad97(...func_get_args());
+if (!function_exists('composerRequirefb80eb8e6c481fa9157dbd5f389dad5e')) {
+    function composerRequirefb80eb8e6c481fa9157dbd5f389dad5e() {
+        return \PC_Headless_Blog_1AA\composerRequirefb80eb8e6c481fa9157dbd5f389dad5e(...func_get_args());
     }
 }
 if (!function_exists('add_shortcode')) {
@@ -299,6 +305,56 @@ if (!function_exists('wp_upload_dir')) {
 if (!function_exists('do_action')) {
     function do_action() {
         return \PC_Headless_Blog_1AA\do_action(...func_get_args());
+    }
+}
+if (!function_exists('sanitize_text_field')) {
+    function sanitize_text_field() {
+        return \PC_Headless_Blog_1AA\sanitize_text_field(...func_get_args());
+    }
+}
+if (!function_exists('add_meta_box')) {
+    function add_meta_box() {
+        return \PC_Headless_Blog_1AA\add_meta_box(...func_get_args());
+    }
+}
+if (!function_exists('flush_rewrite_rules')) {
+    function flush_rewrite_rules() {
+        return \PC_Headless_Blog_1AA\flush_rewrite_rules(...func_get_args());
+    }
+}
+if (!function_exists('get_taxonomy')) {
+    function get_taxonomy() {
+        return \PC_Headless_Blog_1AA\get_taxonomy(...func_get_args());
+    }
+}
+if (!function_exists('get_post')) {
+    function get_post() {
+        return \PC_Headless_Blog_1AA\get_post(...func_get_args());
+    }
+}
+if (!function_exists('wp_enqueue_style')) {
+    function wp_enqueue_style() {
+        return \PC_Headless_Blog_1AA\wp_enqueue_style(...func_get_args());
+    }
+}
+if (!function_exists('wp_register_script')) {
+    function wp_register_script() {
+        return \PC_Headless_Blog_1AA\wp_register_script(...func_get_args());
+    }
+}
+if (!function_exists('wp_add_inline_script')) {
+    function wp_add_inline_script() {
+        return \PC_Headless_Blog_1AA\wp_add_inline_script(...func_get_args());
+    }
+}
+if (!function_exists('wp_localize_script')) {
+    function wp_localize_script() {
+        return \PC_Headless_Blog_1AA\wp_localize_script(...func_get_args());
+    }
+}
+if (!function_exists('wp_enqueue_script')) {
+    function wp_enqueue_script() {
+        return \PC_Headless_Blog_1AA\wp_enqueue_script(...func_get_args());
     }
 }
 

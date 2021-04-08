@@ -10,5 +10,10 @@ declare(strict_types=1);
  * @since 1.0.0
  */
 
+use PinkCrab\Headless_Blog\Post\Post_Metabox_Controller;
+
 return array(
+
+	// "Post" post Type
+	Post_Metabox_Controller::class,
 );

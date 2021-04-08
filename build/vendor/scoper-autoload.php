@@ -237,8 +237,8 @@ if (!class_exists('Baz', false) && !interface_exists('Baz', false) && !trait_exi
 if (!class_exists('Composer\Autoload\ClassLoader', false) && !interface_exists('Composer\Autoload\ClassLoader', false) && !trait_exists('Composer\Autoload\ClassLoader', false)) {
     spl_autoload_call('PC_Headless_Blog_1AA\Composer\Autoload\ClassLoader');
 }
-if (!class_exists('ComposerAutoloaderInitfb80eb8e6c481fa9157dbd5f389dad5e', false) && !interface_exists('ComposerAutoloaderInitfb80eb8e6c481fa9157dbd5f389dad5e', false) && !trait_exists('ComposerAutoloaderInitfb80eb8e6c481fa9157dbd5f389dad5e', false)) {
-    spl_autoload_call('PC_Headless_Blog_1AA\ComposerAutoloaderInitfb80eb8e6c481fa9157dbd5f389dad5e');
+if (!class_exists('ComposerAutoloaderInit1dc1304d55381de31c229a000ee0ee0e', false) && !interface_exists('ComposerAutoloaderInit1dc1304d55381de31c229a000ee0ee0e', false) && !trait_exists('ComposerAutoloaderInit1dc1304d55381de31c229a000ee0ee0e', false)) {
+    spl_autoload_call('PC_Headless_Blog_1AA\ComposerAutoloaderInit1dc1304d55381de31c229a000ee0ee0e');
 }
 if (!class_exists('Test_Test', false) && !interface_exists('Test_Test', false) && !trait_exists('Test_Test', false)) {
     spl_autoload_call('PC_Headless_Blog_1AA\Test_Test');
@@ -252,9 +252,9 @@ if (!class_exists('Test_HTTP', false) && !interface_exists('Test_HTTP', false) &
 
 // Functions whitelisting. For more information see:
 // https://github.com/humbug/php-scoper/blob/master/README.md#functions-whitelisting
-if (!function_exists('composerRequirefb80eb8e6c481fa9157dbd5f389dad5e')) {
-    function composerRequirefb80eb8e6c481fa9157dbd5f389dad5e() {
-        return \PC_Headless_Blog_1AA\composerRequirefb80eb8e6c481fa9157dbd5f389dad5e(...func_get_args());
+if (!function_exists('composerRequire1dc1304d55381de31c229a000ee0ee0e')) {
+    function composerRequire1dc1304d55381de31c229a000ee0ee0e() {
+        return \PC_Headless_Blog_1AA\composerRequire1dc1304d55381de31c229a000ee0ee0e(...func_get_args());
     }
 }
 if (!function_exists('add_shortcode')) {

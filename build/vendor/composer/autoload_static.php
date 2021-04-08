@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitfb80eb8e6c481fa9157dbd5f389dad5e
+class ComposerStaticInit1dc1304d55381de31c229a000ee0ee0e
 {
     public static $files = array (
         'be8785f285476d960a9374d1a827f21a' => __DIR__ . '/..' . '/pinkcrab/hook-loader/tests/Fixtures/functions.php',
@@ -159,14 +159,15 @@ class ComposerStaticInitfb80eb8e6c481fa9157dbd5f389dad5e
         'PC_Headless_Blog_1AA\\Psr\\Http\\Message\\UploadedFileInterface' => __DIR__ . '/..' . '/psr/http-message/src/UploadedFileInterface.php',
         'PC_Headless_Blog_1AA\\Psr\\Http\\Message\\UriFactoryInterface' => __DIR__ . '/..' . '/psr/http-factory/src/UriFactoryInterface.php',
         'PC_Headless_Blog_1AA\\Psr\\Http\\Message\\UriInterface' => __DIR__ . '/..' . '/psr/http-message/src/UriInterface.php',
+        'PinkCrab\\Headless_Blog\\Post\\Post_Metabox_Controller' => __DIR__ . '/../..' . '/../src/Post/Post_Metabox_Controller.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitfb80eb8e6c481fa9157dbd5f389dad5e::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitfb80eb8e6c481fa9157dbd5f389dad5e::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitfb80eb8e6c481fa9157dbd5f389dad5e::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1dc1304d55381de31c229a000ee0ee0e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1dc1304d55381de31c229a000ee0ee0e::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit1dc1304d55381de31c229a000ee0ee0e::$classMap;
 
         }, null, ClassLoader::class);
     }

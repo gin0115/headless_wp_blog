@@ -74,4 +74,5 @@ return array(
     'PC_Headless_Blog_1AA\\Psr\\Http\\Message\\UploadedFileInterface' => $vendorDir . '/psr/http-message/src/UploadedFileInterface.php',
     'PC_Headless_Blog_1AA\\Psr\\Http\\Message\\UriFactoryInterface' => $vendorDir . '/psr/http-factory/src/UriFactoryInterface.php',
     'PC_Headless_Blog_1AA\\Psr\\Http\\Message\\UriInterface' => $vendorDir . '/psr/http-message/src/UriInterface.php',
+    'PinkCrab\\Headless_Blog\\Post\\Post_Metabox_Controller' => $baseDir . '/../src/Post/Post_Metabox_Controller.php',
 );

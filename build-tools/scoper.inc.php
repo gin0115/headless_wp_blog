@@ -1,38 +1,15 @@
 <?php
 
 declare(strict_types=1);
+
+require __DIR__ . '/Patcher_Manger/Patcher_Dispatcher.php';
+
 use Isolated\Symfony\Component\Finder\Finder;
 
-// Returns an array of all symbols from processed stubs.
-$patcherProvider = function() {
+// Create the patcher dispatcher.
+$parch_dispatcher = new Patcher_Dispatcher( __DIR__ . '/patchers' );
 
-	// Alter this if you change the patcher creation dir.
-	$patcherDir = __DIR__ . '/build-tools/patchers';
-	$stubFiles  = array_diff( scandir( $patcherDir ), array( '..', '.' ) );
 
-	$symbols = array();
-	foreach ( $stubFiles as $stub ) {
-
-		if ( $stub === '.gitkeep' ) {
-				continue;
-		}
-
-		try {
-			// Attempt to unserialize
-			$stubSymbols = unserialize( file_get_contents( $patcherDir . '/' . $stub ) );
-
-			if ( ! is_array( $stubSymbols ) ) {
-				throw new Exception( 'Array of symbols expected' );
-			}
-
-			$symbols = array_merge( $symbols, $stubSymbols );
-		} catch ( \Throwable $th ) {
-			die( $th->getMessage() );
-		}
-	}
-
-	return $symbols;
-};
 
 return array(
 	// Set your namespace prefix here
@@ -56,11 +33,9 @@ return array(
 		),
 	),
 	'patchers'                   => array(
-		function ( $filePath, $prefix, $contents ) use ( $patcherProvider ) {
-			$prefixDoubleSlashed = str_replace( '\\', '\\\\', $prefix );
-			$quotes = array( '\'', '"', '`' );
+		function ( $filePath, $prefix, $contents ) use ( $parch_dispatcher ) {
 
-			foreach ( $patcherProvider() as $identifier ) {
+			foreach ( $parch_dispatcher->get_patcher_elements() as $identifier ) {
 				$contents = str_replace( "\\$prefix\\$identifier", "\\$identifier", $contents );
 			}
 

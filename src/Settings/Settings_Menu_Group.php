@@ -12,16 +12,17 @@ declare(strict_types=1);
 
 namespace PinkCrab\Headless_Blog\Settings;
 
+use RdKafka\Conf;
 use PC_Headless_Blog_1AA\PinkCrab\Admin_Pages\Page;
 use PC_Headless_Blog_1AA\PinkCrab\Core\Application\App;
+use PC_Headless_Blog_1AA\PinkCrab\Core\Application\Config;
 use PinkCrab\Headless_Blog\Settings\Settings_Page_Controller;
 use PC_Headless_Blog_1AA\PinkCrab\Admin_Pages\Menu_Page_Group;
-
+use PC_Headless_Blog_1AA\PinkCrab\Core\Application\App_Config;
 
 class Settings_Menu_Group extends Menu_Page_Group {
 
 	// Define menu details
-	public $key        = 'pc_settings_menu';
 	public $menu_title = 'Settings Page';
 	public $icon_url   = 'dashicons-carrot';
 
@@ -29,10 +30,13 @@ class Settings_Menu_Group extends Menu_Page_Group {
 
 	public function __construct(
 		Settings_Page_Controller $page_controller,
-		App $app
+		App $app,
+		App_Config $config
 	) {
 		$this->page_controller = $page_controller;
+		$this->key             = $config->settings_page_slug;
 		parent::__construct( $app );
+
 	}
 
 	/**

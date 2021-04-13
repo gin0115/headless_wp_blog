@@ -61,4 +61,7 @@ return array(
 		'rest'  => 'pinkcrab/boilerplate',
 		'cache' => 'pinkcrab_boilerplate',
 	),
+	'additional' => array(
+		'settings_page_slug' => 'foo',
+	),
 );

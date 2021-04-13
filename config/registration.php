@@ -12,6 +12,7 @@ declare(strict_types=1);
 
 use PinkCrab\Headless_Blog\Post\Post_Metabox_Controller;
 use PinkCrab\Headless_Blog\Settings\Settings_Menu_Group;
+use PinkCrab\Headless_Blog\Settings\Settings_Page_Controller;
 
 return array(
 
@@ -20,4 +21,5 @@ return array(
 
 	// Admin - Settings
 	Settings_Menu_Group::class,
+	Settings_Page_Controller::class,
 );

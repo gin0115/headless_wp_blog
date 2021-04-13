@@ -8,6 +8,8 @@ $baseDir = dirname($vendorDir);
 return array(
     'PinkCrab\\Headless_Blog\\Tests\\' => array($baseDir . '/../tests'),
     'PinkCrab\\Headless_Blog\\' => array($baseDir . '/../src'),
+    'PC_Headless_Blog_1AA\\eftec\\bladeonehtml\\' => array($vendorDir . '/eftec/bladeonehtml/lib'),
+    'PC_Headless_Blog_1AA\\eftec\\bladeone\\' => array($vendorDir . '/eftec/bladeone/lib'),
     'PC_Headless_Blog_1AA\\Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-factory/src', $vendorDir . '/psr/http-message/src'),
     'PC_Headless_Blog_1AA\\Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'PC_Headless_Blog_1AA\\PinkCrab\\Registerables\\' => array($vendorDir . '/pinkcrab/registerables/src'),
@@ -15,6 +17,8 @@ return array(
     'PC_Headless_Blog_1AA\\PinkCrab\\HTTP\\' => array($vendorDir . '/pinkcrab/http/src'),
     'PC_Headless_Blog_1AA\\PinkCrab\\Enqueue\\' => array($vendorDir . '/pinkcrab/enqueue/src'),
     'PC_Headless_Blog_1AA\\PinkCrab\\Core\\' => array($vendorDir . '/pinkcrab/plugin-framework/src'),
+    'PC_Headless_Blog_1AA\\PinkCrab\\BladeOne\\' => array($vendorDir . '/pinkcrab/bladeone-provider/src'),
+    'PC_Headless_Blog_1AA\\PinkCrab\\Admin_Pages\\' => array($vendorDir . '/pinkcrab/admin-pages/src'),
     'PC_Headless_Blog_1AA\\Nyholm\\Psr7\\' => array($vendorDir . '/nyholm/psr7/src'),
     'PC_Headless_Blog_1AA\\Nyholm\\Psr7Server\\' => array($vendorDir . '/nyholm/psr7-server/src'),
     'PC_Headless_Blog_1AA\\Http\\Message\\' => array($vendorDir . '/php-http/message-factory/src'),

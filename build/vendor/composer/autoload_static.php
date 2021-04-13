@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit55dbaeaecadb0cdd4bdcee49bf6b7b25
+class ComposerStaticInit72aac62e6967022646611b91db38f559
 {
     public static $files = array (
         'be8785f285476d960a9374d1a827f21a' => __DIR__ . '/..' . '/pinkcrab/hook-loader/tests/Fixtures/functions.php',
@@ -15,6 +15,8 @@ class ComposerStaticInit55dbaeaecadb0cdd4bdcee49bf6b7b25
         array (
             'PinkCrab\\Headless_Blog\\Tests\\' => 29,
             'PinkCrab\\Headless_Blog\\' => 23,
+            'PC_Headless_Blog_1AA\\eftec\\bladeonehtml\\' => 40,
+            'PC_Headless_Blog_1AA\\eftec\\bladeone\\' => 36,
             'PC_Headless_Blog_1AA\\Psr\\Http\\Message\\' => 38,
             'PC_Headless_Blog_1AA\\Psr\\Container\\' => 35,
             'PC_Headless_Blog_1AA\\PinkCrab\\Registerables\\' => 44,
@@ -22,6 +24,8 @@ class ComposerStaticInit55dbaeaecadb0cdd4bdcee49bf6b7b25
             'PC_Headless_Blog_1AA\\PinkCrab\\HTTP\\' => 35,
             'PC_Headless_Blog_1AA\\PinkCrab\\Enqueue\\' => 38,
             'PC_Headless_Blog_1AA\\PinkCrab\\Core\\' => 35,
+            'PC_Headless_Blog_1AA\\PinkCrab\\BladeOne\\' => 39,
+            'PC_Headless_Blog_1AA\\PinkCrab\\Admin_Pages\\' => 42,
             'PC_Headless_Blog_1AA\\Nyholm\\Psr7\\' => 33,
             'PC_Headless_Blog_1AA\\Nyholm\\Psr7Server\\' => 39,
             'PC_Headless_Blog_1AA\\Http\\Message\\' => 34,
@@ -38,6 +42,14 @@ class ComposerStaticInit55dbaeaecadb0cdd4bdcee49bf6b7b25
         'PinkCrab\\Headless_Blog\\' => 
         array (
             0 => __DIR__ . '/../..' . '/../src',
+        ),
+        'PC_Headless_Blog_1AA\\eftec\\bladeonehtml\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/eftec/bladeonehtml/lib',
+        ),
+        'PC_Headless_Blog_1AA\\eftec\\bladeone\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/eftec/bladeone/lib',
         ),
         'PC_Headless_Blog_1AA\\Psr\\Http\\Message\\' => 
         array (
@@ -67,6 +79,14 @@ class ComposerStaticInit55dbaeaecadb0cdd4bdcee49bf6b7b25
         'PC_Headless_Blog_1AA\\PinkCrab\\Core\\' => 
         array (
             0 => __DIR__ . '/..' . '/pinkcrab/plugin-framework/src',
+        ),
+        'PC_Headless_Blog_1AA\\PinkCrab\\BladeOne\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pinkcrab/bladeone-provider/src',
+        ),
+        'PC_Headless_Blog_1AA\\PinkCrab\\Admin_Pages\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pinkcrab/admin-pages/src',
         ),
         'PC_Headless_Blog_1AA\\Nyholm\\Psr7\\' => 
         array (
@@ -111,6 +131,13 @@ class ComposerStaticInit55dbaeaecadb0cdd4bdcee49bf6b7b25
         'PC_Headless_Blog_1AA\\Nyholm\\Psr7\\Stream' => __DIR__ . '/..' . '/nyholm/psr7/src/Stream.php',
         'PC_Headless_Blog_1AA\\Nyholm\\Psr7\\UploadedFile' => __DIR__ . '/..' . '/nyholm/psr7/src/UploadedFile.php',
         'PC_Headless_Blog_1AA\\Nyholm\\Psr7\\Uri' => __DIR__ . '/..' . '/nyholm/psr7/src/Uri.php',
+        'PC_Headless_Blog_1AA\\PinkCrab\\Admin_Pages\\ACF_Page' => __DIR__ . '/..' . '/pinkcrab/admin-pages/src/ACF_Page.php',
+        'PC_Headless_Blog_1AA\\PinkCrab\\Admin_Pages\\Menu_Page_Group' => __DIR__ . '/..' . '/pinkcrab/admin-pages/src/Menu_Page_Group.php',
+        'PC_Headless_Blog_1AA\\PinkCrab\\Admin_Pages\\Page' => __DIR__ . '/..' . '/pinkcrab/admin-pages/src/Page.php',
+        'PC_Headless_Blog_1AA\\PinkCrab\\Admin_Pages\\Page_Collection' => __DIR__ . '/..' . '/pinkcrab/admin-pages/src/Page_Collection.php',
+        'PC_Headless_Blog_1AA\\PinkCrab\\Admin_Pages\\Page_Factory' => __DIR__ . '/..' . '/pinkcrab/admin-pages/src/Page_Factory.php',
+        'PC_Headless_Blog_1AA\\PinkCrab\\Admin_Pages\\Page_Validator' => __DIR__ . '/..' . '/pinkcrab/admin-pages/src/Page_Validator.php',
+        'PC_Headless_Blog_1AA\\PinkCrab\\BladeOne\\BladeOne_Provider' => __DIR__ . '/..' . '/pinkcrab/bladeone-provider/src/BladeOne_Provider.php',
         'PC_Headless_Blog_1AA\\PinkCrab\\Core\\Application\\App' => __DIR__ . '/..' . '/pinkcrab/plugin-framework/src/Application/App.php',
         'PC_Headless_Blog_1AA\\PinkCrab\\Core\\Application\\App_Config' => __DIR__ . '/..' . '/pinkcrab/plugin-framework/src/Application/App_Config.php',
         'PC_Headless_Blog_1AA\\PinkCrab\\Core\\Application\\App_Factory' => __DIR__ . '/..' . '/pinkcrab/plugin-framework/src/Application/App_Factory.php',
@@ -159,15 +186,23 @@ class ComposerStaticInit55dbaeaecadb0cdd4bdcee49bf6b7b25
         'PC_Headless_Blog_1AA\\Psr\\Http\\Message\\UploadedFileInterface' => __DIR__ . '/..' . '/psr/http-message/src/UploadedFileInterface.php',
         'PC_Headless_Blog_1AA\\Psr\\Http\\Message\\UriFactoryInterface' => __DIR__ . '/..' . '/psr/http-factory/src/UriFactoryInterface.php',
         'PC_Headless_Blog_1AA\\Psr\\Http\\Message\\UriInterface' => __DIR__ . '/..' . '/psr/http-message/src/UriInterface.php',
+        'PC_Headless_Blog_1AA\\eftec\\bladeone\\BladeOne' => __DIR__ . '/..' . '/eftec/bladeone/lib/BladeOne.php',
+        'PC_Headless_Blog_1AA\\eftec\\bladeone\\BladeOneCache' => __DIR__ . '/..' . '/eftec/bladeone/lib/BladeOneCache.php',
+        'PC_Headless_Blog_1AA\\eftec\\bladeone\\BladeOneCacheRedis' => __DIR__ . '/..' . '/eftec/bladeone/lib/BladeOneCacheRedis.php',
+        'PC_Headless_Blog_1AA\\eftec\\bladeone\\BladeOneCustom' => __DIR__ . '/..' . '/eftec/bladeone/lib/BladeOneCustom.php',
+        'PC_Headless_Blog_1AA\\eftec\\bladeone\\BladeOneHtml' => __DIR__ . '/..' . '/eftec/bladeone/lib/BladeOneHtml.php',
+        'PC_Headless_Blog_1AA\\eftec\\bladeone\\BladeOneHtmlBootstrap' => __DIR__ . '/..' . '/eftec/bladeone/lib/BladeOneHtmlBootstrap.php',
+        'PC_Headless_Blog_1AA\\eftec\\bladeone\\BladeOneLang' => __DIR__ . '/..' . '/eftec/bladeone/lib/BladeOneLang.php',
+        'PC_Headless_Blog_1AA\\eftec\\bladeonehtml\\BladeOneHtml' => __DIR__ . '/..' . '/eftec/bladeonehtml/lib/BladeOneHtml.php',
         'PinkCrab\\Headless_Blog\\Post\\Post_Metabox_Controller' => __DIR__ . '/../..' . '/../src/Post/Post_Metabox_Controller.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit55dbaeaecadb0cdd4bdcee49bf6b7b25::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit55dbaeaecadb0cdd4bdcee49bf6b7b25::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit55dbaeaecadb0cdd4bdcee49bf6b7b25::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit72aac62e6967022646611b91db38f559::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit72aac62e6967022646611b91db38f559::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit72aac62e6967022646611b91db38f559::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -1,5 +1,112 @@
 [
     {
+        "name": "eftec\/bladeone",
+        "version": "3.51",
+        "version_normalized": "3.51.0.0",
+        "source": {
+            "type": "git",
+            "url": "https:\/\/github.com\/EFTEC\/BladeOne.git",
+            "reference": "61e5d9b6fc6f565b525ac135e6b7e5161e1702c8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https:\/\/api.github.com\/repos\/EFTEC\/BladeOne\/zipball\/61e5d9b6fc6f565b525ac135e6b7e5161e1702c8",
+            "reference": "61e5d9b6fc6f565b525ac135e6b7e5161e1702c8",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*",
+            "php": ">=5.6"
+        },
+        "require-dev": {
+            "friendsofphp\/php-cs-fixer": "^2.16.1",
+            "phpunit\/phpunit": "^5.7",
+            "squizlabs\/php_codesniffer": "^3.5.4"
+        },
+        "suggest": {
+            "eftec\/bladeonehtml": "Extension to create forms",
+            "ext-mbstring": "This extension is used if it's active"
+        },
+        "time": "2021-02-26T14:27:39+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PC_Headless_Blog_1AA\\eftec\\bladeone\\": "lib\/"
+            }
+        },
+        "notification-url": "https:\/\/packagist.org\/downloads\/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jorge Patricio Castro Castillo",
+                "email": "jcastro@eftec.cl"
+            }
+        ],
+        "description": "The standalone version Blade Template Engine from Laravel in a single php file",
+        "homepage": "https:\/\/github.com\/EFTEC\/BladeOne",
+        "keywords": [
+            "blade",
+            "php",
+            "template",
+            "templating",
+            "view"
+        ]
+    },
+    {
+        "name": "eftec\/bladeonehtml",
+        "version": "1.7.1",
+        "version_normalized": "1.7.1.0",
+        "source": {
+            "type": "git",
+            "url": "https:\/\/github.com\/EFTEC\/BladeOneHtml.git",
+            "reference": "563aa722089cf70dd6de7c347b5b072ad878d26f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https:\/\/api.github.com\/repos\/EFTEC\/BladeOneHtml\/zipball\/563aa722089cf70dd6de7c347b5b072ad878d26f",
+            "reference": "563aa722089cf70dd6de7c347b5b072ad878d26f",
+            "shasum": ""
+        },
+        "require": {
+            "eftec\/bladeone": "^3.47",
+            "ext-json": "*",
+            "php": ">=5.6"
+        },
+        "require-dev": {
+            "phpunit\/phpunit": "^5.7"
+        },
+        "time": "2021-02-06T22:34:58+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PC_Headless_Blog_1AA\\eftec\\bladeonehtml\\": "lib\/"
+            }
+        },
+        "notification-url": "https:\/\/packagist.org\/downloads\/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jorge Patricio Castro Castillo",
+                "email": "jcastro@eftec.cl"
+            }
+        ],
+        "description": "The standalone version Blade Template Engine from Laravel in a single php file",
+        "homepage": "https:\/\/github.com\/EFTEC\/BladeOneHtml",
+        "keywords": [
+            "blade",
+            "php",
+            "template",
+            "templating",
+            "view"
+        ]
+    },
+    {
         "name": "level-2\/dice",
         "version": "4.0.2",
         "version_normalized": "4.0.2.0",
@@ -237,6 +344,121 @@
             "stream",
             "uri"
         ]
+    },
+    {
+        "name": "pinkcrab\/admin-pages",
+        "version": "0.1.2",
+        "version_normalized": "0.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https:\/\/github.com\/Pink-Crab\/Module__Admin_Pages.git",
+            "reference": "25f6dc39a2c58eafaca8da09a8abd12f84b649de"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https:\/\/api.github.com\/repos\/Pink-Crab\/Module__Admin_Pages\/zipball\/25f6dc39a2c58eafaca8da09a8abd12f84b649de",
+            "reference": "25f6dc39a2c58eafaca8da09a8abd12f84b649de",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.1.0",
+            "pinkcrab\/plugin-framework": "0.4.*"
+        },
+        "require-dev": {
+            "dealerdirect\/phpcodesniffer-composer-installer": "*",
+            "gin0115\/wpunit-helpers": "dev-develop",
+            "object-calisthenics\/phpcs-calisthenics-rules": "*",
+            "php-stubs\/wordpress-stubs": "^5.6.0",
+            "phpstan\/phpstan": "^0.12.6",
+            "phpunit\/phpunit": "^7.0",
+            "roots\/wordpress": "^5.5",
+            "symfony\/var-dumper": "4.*",
+            "szepeviktor\/phpstan-wordpress": "^0.7.2",
+            "wp-coding-standards\/wpcs": "*",
+            "wp-phpunit\/wp-phpunit": "^5.0",
+            "yoast\/phpunit-polyfills": "^0.2.0"
+        },
+        "time": "2021-04-13T01:33:31+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PC_Headless_Blog_1AA\\PinkCrab\\Admin_Pages\\": "src"
+            },
+            "files": []
+        },
+        "notification-url": "https:\/\/packagist.org\/downloads\/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Glynn Quelch",
+                "email": "glynn.quelch@pinkcrab.co.uk",
+                "homepage": "http:\/\/clappo.co.uk",
+                "role": "Developer"
+            }
+        ],
+        "description": "The PinkCrab framework package for creating admin pages\/groups using inheritance very easyly from plugins and themes.",
+        "homepage": "https:\/\/pinkcrab.co.uk"
+    },
+    {
+        "name": "pinkcrab\/bladeone-provider",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https:\/\/github.com\/Pink-Crab\/BladeOne_Provider.git",
+            "reference": "b70c51b3c1e5228656a34fbec51cd8296b5495df"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https:\/\/api.github.com\/repos\/Pink-Crab\/BladeOne_Provider\/zipball\/b70c51b3c1e5228656a34fbec51cd8296b5495df",
+            "reference": "b70c51b3c1e5228656a34fbec51cd8296b5495df",
+            "shasum": ""
+        },
+        "require": {
+            "eftec\/bladeonehtml": "^1.7",
+            "php": ">=7.1.0",
+            "pinkcrab\/plugin-framework": "0.*"
+        },
+        "require-dev": {
+            "dealerdirect\/phpcodesniffer-composer-installer": "*",
+            "gin0115\/wpunit-helpers": "^1.0",
+            "object-calisthenics\/phpcs-calisthenics-rules": "*",
+            "php-stubs\/wordpress-stubs": "^5.6.0",
+            "phpstan\/phpstan": "^0.12.6",
+            "phpunit\/phpunit": "^7.0",
+            "roots\/wordpress": "^5.5",
+            "symfony\/var-dumper": "4.*",
+            "szepeviktor\/phpstan-wordpress": "^0.7.2",
+            "wp-coding-standards\/wpcs": "*",
+            "wp-phpunit\/wp-phpunit": "^5.0",
+            "yoast\/phpunit-polyfills": "^0.2.0"
+        },
+        "time": "2021-04-11T14:26:20+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PC_Headless_Blog_1AA\\PinkCrab\\BladeOne\\": "src"
+            },
+            "files": []
+        },
+        "notification-url": "https:\/\/packagist.org\/downloads\/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Glynn Quelch",
+                "email": "glynn.quelch@pinkcrab.co.uk",
+                "homepage": "http:\/\/clappo.co.uk",
+                "role": "Developer"
+            }
+        ],
+        "description": "An implementation of the PinkCrab Renderable Interface used in the PinkCrab Plugin Framework.",
+        "homepage": "https:\/\/pinkcrab.co.uk"
     },
     {
         "name": "pinkcrab\/enqueue",

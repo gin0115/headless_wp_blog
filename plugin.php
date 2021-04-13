@@ -13,7 +13,6 @@
  * Text Domain:     pinkcrab-headless-blog
  */
 
-use PC_Headless_Blog_1AA\PinkCrab\Core\Application\App;
 use PC_Headless_Blog_1AA\PinkCrab\Core\Application\App_Factory;
 
 require_once __DIR__ . '/function_pollyfills.php';

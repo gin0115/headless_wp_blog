@@ -90,4 +90,6 @@ return array(
     'PC_Headless_Blog_1AA\\eftec\\bladeone\\BladeOneLang' => $vendorDir . '/eftec/bladeone/lib/BladeOneLang.php',
     'PC_Headless_Blog_1AA\\eftec\\bladeonehtml\\BladeOneHtml' => $vendorDir . '/eftec/bladeonehtml/lib/BladeOneHtml.php',
     'PinkCrab\\Headless_Blog\\Post\\Post_Metabox_Controller' => $baseDir . '/../src/Post/Post_Metabox_Controller.php',
+    'PinkCrab\\Headless_Blog\\Settings\\Settings_Menu_Group' => $baseDir . '/../src/Settings/Settings_Menu_Group.php',
+    'PinkCrab\\Headless_Blog\\Settings\\Settings_Page_Controller' => $baseDir . '/../src/Settings/Settings_Page_Controller.php',
 );

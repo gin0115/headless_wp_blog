@@ -19,7 +19,7 @@ require_once __DIR__ . '/function_pollyfills.php';
 require_once __DIR__ . '/build/vendor/autoload.php';
 
 ( new App_Factory() )->with_wp_dice( true )
-	->di_rules( require __DIR__ . '/config/dependencies.php' )
 	->app_config( require __DIR__ . '/config/settings.php' )
+	->di_rules( require __DIR__ . '/config/dependencies.php' )
 	->registration_classses( require __DIR__ . '/config/registration.php' )
 	->boot();

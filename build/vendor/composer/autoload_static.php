@@ -195,6 +195,8 @@ class ComposerStaticInit72aac62e6967022646611b91db38f559
         'PC_Headless_Blog_1AA\\eftec\\bladeone\\BladeOneLang' => __DIR__ . '/..' . '/eftec/bladeone/lib/BladeOneLang.php',
         'PC_Headless_Blog_1AA\\eftec\\bladeonehtml\\BladeOneHtml' => __DIR__ . '/..' . '/eftec/bladeonehtml/lib/BladeOneHtml.php',
         'PinkCrab\\Headless_Blog\\Post\\Post_Metabox_Controller' => __DIR__ . '/../..' . '/../src/Post/Post_Metabox_Controller.php',
+        'PinkCrab\\Headless_Blog\\Settings\\Settings_Menu_Group' => __DIR__ . '/../..' . '/../src/Settings/Settings_Menu_Group.php',
+        'PinkCrab\\Headless_Blog\\Settings\\Settings_Page_Controller' => __DIR__ . '/../..' . '/../src/Settings/Settings_Page_Controller.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

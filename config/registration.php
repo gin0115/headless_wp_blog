@@ -11,9 +11,13 @@ declare(strict_types=1);
  */
 
 use PinkCrab\Headless_Blog\Post\Post_Metabox_Controller;
+use PinkCrab\Headless_Blog\Settings\Settings_Menu_Group;
 
 return array(
 
 	// "Post" post Type
 	Post_Metabox_Controller::class,
+
+	// Admin - Settings
+	Settings_Menu_Group::class,
 );

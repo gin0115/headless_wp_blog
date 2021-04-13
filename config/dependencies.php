@@ -10,4 +10,18 @@ declare(strict_types=1);
  * @since 1.0.0
  */
 
-return array();
+use PC_Headless_Blog_1AA\PinkCrab\BladeOne\BladeOne_Provider;
+use PC_Headless_Blog_1AA\PinkCrab\Core\Interfaces\Renderable;
+
+return array(
+	'*' => array(
+		'substitutions' => array(
+			Renderable::class => BladeOne_Provider::init(
+				\dirname( __DIR__, 1 ) . '/views',
+				ABSPATH . 'blade_cache',
+				5 // Debug mode
+			),
+		),
+	),
+);
+

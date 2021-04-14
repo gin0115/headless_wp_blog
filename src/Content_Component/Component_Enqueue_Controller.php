@@ -12,6 +12,7 @@ use PC_Headless_Blog_1AA\PinkCrab\Loader\Loader;
 use PC_Headless_Blog_1AA\PinkCrab\Enqueue\Enqueue;
 use PC_Headless_Blog_1AA\PinkCrab\Core\Application\App_Config;
 use PC_Headless_Blog_1AA\PinkCrab\Core\Interfaces\Registerable;
+use PinkCrab\Headless_Blog\Content_Component\Component_Library;
 
 class Component_Enqueue_Controller implements Registerable {
 
@@ -23,8 +24,12 @@ class Component_Enqueue_Controller implements Registerable {
 	/** @var App_Config */
 	protected $config;
 
-	public function __construct( App_Config $config ) {
-		$this->config = $config;
+	/** @var Component_Library */
+	protected $components;
+
+	public function __construct( App_Config $config, Component_Library $components ) {
+		$this->config     = $config;
+		$this->components = $components;
 	}
 
 	public function register( Loader $loader ): void {
@@ -42,7 +47,13 @@ class Component_Enqueue_Controller implements Registerable {
 		Enqueue::script( self::SCRIPT_HANDLES['admin_metabox'] )
 			->src( $this->config->url( 'assets' ) . 'js/content-components/metabox.js' )
 			->deps( 'jquery' )
-			->ver( $this->config->version() )
-			->register();
+			// ->ver( $this->config->version() )
+            ->lastest_version()
+			->localize(
+				array( 'components' => $this->components->get_components() )
+			)->register();
+
+		// Enable drag and drop (jquery UI)
+		Enqueue::script( 'jquery-ui-droppable' )->register();
 	}
 }

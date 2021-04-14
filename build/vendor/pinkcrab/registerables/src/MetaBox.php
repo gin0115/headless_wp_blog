@@ -124,8 +124,9 @@ class MetaBox
             throw new \Exception('Renderable has not been set to this metabox');
         }
         $this->view(function (\WP_Post $post, array $args) use($template) {
-            $args['post'] = $post;
-            $this->renderable->render($template, $args);
+            $args['args']['post'] = $post;
+
+            $this->renderable->render($template, $args['args']);
             /* @phpstan-ignore-line Already type checked above*/
         });
         return $this;
